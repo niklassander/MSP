@@ -3,6 +3,7 @@ import './UserMenu.css';
 import { useNavigate } from 'react-router-dom';
 import LogoutItem from './LogoutItem';
 import VehicleTypeSelector from './VehicleTypeSelector';
+import UnitSelector from './UnitSelector';
 
 const UserMenu: React.FC = () => {
   const [open, setOpen] = useState(false);
@@ -43,6 +44,9 @@ const UserMenu: React.FC = () => {
           <hr></hr>
           <div className="user-menu-item nohover">
             <VehicleTypeSelector />
+          </div>
+          <div className="user-menu-item nohover">
+            <UnitSelector />
           </div>
         </div>
       )}

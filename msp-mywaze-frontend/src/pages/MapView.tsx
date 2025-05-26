@@ -3,14 +3,18 @@ import 'leaflet/dist/leaflet.css';
 import SearchBar from '../components/Input/SearchBar';
 import RouteMap from '../components/Map/RouteMap';
 import UserMenu from '../components/Menu/UserMenu';
-
+import { useAuth } from '../context/AuthContext';
 import random from 'random';
 
 const MapView: React.FC = () => {
   const [currentLocation, setCurrentLocation] = useState<[number, number] | null>(null);
-  const [speed, setSpeed] = useState<number | null>(null); // Track speed here
+  const [speed, setSpeed] = useState<number | null>(null); // GPS-based speed
+  const [simulatedSpeed, setSimulatedSpeed] = useState<number | null>(null); // Simulated speed on click
   const [destination, setDestination] = useState('');
   const [submittedDestination, setSubmittedDestination] = useState('');
+
+  const { credentials } = useAuth();
+  const unitType = credentials?.preferences?.unit_type || 'km/h';
 
   const handleSearch = () => {
     if (!currentLocation) {
@@ -34,11 +38,11 @@ const MapView: React.FC = () => {
         if (pos.coords.speed !== null) {
           setSpeed(pos.coords.speed);
         } else {
-          setSpeed(13); // To test on desktop, set speed to just over 50 (m/s)
+          setSpeed(13); // default speed for testing (m/s)
         }
       },
       (err) => {
-        if (err.code !== 2) { // Ignore POSITION_UNAVAILABLE errors
+        if (err.code !== 2) { // Ignore POSITION_UNAVAILABLE
           console.error('Error watching location:', err);
         }
       },
@@ -53,6 +57,15 @@ const MapView: React.FC = () => {
       navigator.geolocation.clearWatch(watchId);
     };
   }, []);
+
+  const activeSpeed = simulatedSpeed ?? speed ?? 0;
+
+  const speedInUnits =
+    unitType === 'mph'
+      ? (activeSpeed * 2.23694).toFixed(1)
+      : (activeSpeed * 3.6).toFixed(1);
+
+  const speedUnitLabel = unitType;
 
   return (
     <div style={{ height: '100vh', width: '100vw', position: 'relative' }}>
@@ -72,8 +85,8 @@ const MapView: React.FC = () => {
       />
 
       {/* Speed display */}
-      {speed !== null && (
-        <div style={{
+      <div
+        style={{
           position: 'absolute',
           bottom: 20,
           right: 20,
@@ -82,14 +95,14 @@ const MapView: React.FC = () => {
           borderRadius: '8px',
           boxShadow: '0 2px 6px rgba(0,0,0,0.3)',
           fontSize: '14px',
-          color: speed*3.6 > 50 ? 'red' : '#333',
-          zIndex: 1000
+          color: parseFloat(speedInUnits) > 50 ? 'red' : '#333',
+          zIndex: 1000,
+          cursor: 'pointer',
         }}
-        onClick={() => setSpeed(random.normal(14, 5)())} 
-        >
-          Speed: {(speed * 3.6).toFixed(1)} km/h
-        </div>
-      )}
+        onClick={() => setSimulatedSpeed(random.normal(14, 5)())}
+      >
+        Speed: {speedInUnits} {speedUnitLabel}
+      </div>
     </div>
   );
 };
