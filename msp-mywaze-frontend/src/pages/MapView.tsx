@@ -7,7 +7,6 @@ import UserMenu from '../components/Menu/UserMenu';
 import BookmarkList from '../components/BookmarkList/BookmarkList';
 import SpeedDisplay from '../components/SpeedDisplay/SpeedDisplay';
 import { useLiveLocation } from '../hooks/useLiveLocation';
-
 import random from 'random'; // Used only for debugging feature for speed warnings below
 
 // Bookmark Format 

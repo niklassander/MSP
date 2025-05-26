@@ -1,0 +1,30 @@
+.unit-selector {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 12px 8px;
+}
+
+.unit-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  transition: background-color 0.2s, border 0.2s;
+}
+
+.unit-option:hover {
+  background-color: #f0f0f0;
+}
+
+.unit-option.selected {
+  background-color: #e6f0ff;
+  border: 1px solid #3388ff;
+  color: #0044cc;
+}

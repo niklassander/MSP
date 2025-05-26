@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import './UserMenu.css';
 import LogoutItem from './LogoutItem';
 import VehicleTypeSelector from './VehicleTypeSelector';
+import UnitSelector from './UnitSelector';
 
 const UserMenu: React.FC = () => {
   const [open, setOpen] = useState(false);
@@ -38,6 +39,9 @@ const UserMenu: React.FC = () => {
           <hr></hr>
           <div className="user-menu-item nohover">
             <VehicleTypeSelector />
+          </div>
+          <div className="user-menu-item nohover">
+            <UnitSelector />
           </div>
         </div>
       )}
