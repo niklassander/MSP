@@ -31,7 +31,7 @@
       <bpmn2:messageEventDefinition id="MessageEventDefinition_0zynnb0" />
     </bpmn2:intermediateCatchEvent>
     <bpmn2:sequenceFlow id="Flow_17dn407" sourceRef="Event_08j2xet" targetRef="Activity_06tzivv" />
-    <bpmn2:dataObjectReference id="DataObjectReference_01606cz" name="destination" dataObjectRef="DataObject_05yt9zy" />
+    <bpmn2:dataObjectReference id="DataObjectReference_01606cz" name="Destination" dataObjectRef="DataObject_05yt9zy" />
     <bpmn2:dataObject id="DataObject_05yt9zy" />
     <bpmn2:sequenceFlow id="Flow_0n30ghg" sourceRef="Activity_06tzivv" targetRef="Activity_1xm3j40" />
     <bpmn2:sendTask id="Activity_1xm3j40" name="send route information">
@@ -131,7 +131,7 @@
     </bpmn2:sendTask>
     <bpmn2:dataObjectReference id="DataObjectReference_1tf44i8" name="Filter {avoid tolls}" dataObjectRef="DataObject_09qvwez" />
     <bpmn2:dataObject id="DataObject_09qvwez" />
-    <bpmn2:dataObjectReference id="DataObjectReference_1for824" name="route" dataObjectRef="DataObject_1asepw3" />
+    <bpmn2:dataObjectReference id="DataObjectReference_1for824" name="Route" dataObjectRef="DataObject_1asepw3" />
     <bpmn2:dataObject id="DataObject_1asepw3" />
     <bpmn2:exclusiveGateway id="Gateway_1xgzhzj">
       <bpmn2:incoming>Flow_0nvm12x</bpmn2:incoming>
@@ -152,9 +152,9 @@
         <bpmn2:targetRef>DataObjectReference_01606cz</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
     </bpmn2:startEvent>
-    <bpmn2:dataObjectReference id="DataObjectReference_10va8gk" name="mode of transportation" dataObjectRef="DataObject_0hw4ao1" />
+    <bpmn2:dataObjectReference id="DataObjectReference_10va8gk" name="Mode of transportation" dataObjectRef="DataObject_0hw4ao1" />
     <bpmn2:dataObject id="DataObject_0hw4ao1" />
-    <bpmn2:dataObjectReference id="DataObjectReference_06ta0ho" name="route" dataObjectRef="DataObject_1v8ypva" />
+    <bpmn2:dataObjectReference id="DataObjectReference_06ta0ho" name="Route" dataObjectRef="DataObject_1v8ypva" />
     <bpmn2:dataObject id="DataObject_1v8ypva" />
   </bpmn2:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
@@ -176,7 +176,7 @@
       <bpmndi:BPMNShape id="DataObjectReference_01606cz_di" bpmnElement="DataObjectReference_01606cz">
         <dc:Bounds x="422" y="455" width="36" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="413" y="512" width="54" height="14" />
+          <dc:Bounds x="412" y="512" width="56" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_03itoi6_di" bpmnElement="Activity_1xm3j40">
@@ -187,18 +187,6 @@
         <dc:Bounds x="692" y="485" width="36" height="50" />
         <bpmndi:BPMNLabel>
           <dc:Bounds x="699" y="542" width="22" height="14" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="DataObjectReference_10va8gk_di" bpmnElement="DataObjectReference_10va8gk">
-        <dc:Bounds x="632" y="265" width="36" height="50" />
-        <bpmndi:BPMNLabel>
-          <dc:Bounds x="616" y="322" width="68" height="27" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="DataObjectReference_06ta0ho_di" bpmnElement="DataObjectReference_06ta0ho">
-        <dc:Bounds x="852" y="485" width="36" height="50" />
-        <bpmndi:BPMNLabel>
-          <dc:Bounds x="857" y="542" width="26" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_1770rl9_di" bpmnElement="Activity_06tzivv">
@@ -245,7 +233,7 @@
       <bpmndi:BPMNShape id="BPMNShape_1rq6j5u" bpmnElement="DataObjectReference_1for824">
         <dc:Bounds x="1502" y="255" width="36" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="1507" y="313" width="26" height="14" />
+          <dc:Bounds x="1505" y="313" width="30" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Gateway_1xgzhzj_di" bpmnElement="Gateway_1xgzhzj" isMarkerVisible="true">
@@ -264,6 +252,18 @@
         <dc:Bounds x="332" y="382" width="36" height="36" />
         <bpmndi:BPMNLabel>
           <dc:Bounds x="314" y="425" width="72" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DataObjectReference_10va8gk_di" bpmnElement="DataObjectReference_10va8gk">
+        <dc:Bounds x="632" y="265" width="36" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="616" y="322" width="68" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DataObjectReference_06ta0ho_di" bpmnElement="DataObjectReference_06ta0ho">
+        <dc:Bounds x="852" y="485" width="36" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="855" y="542" width="30" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_1p77eg5_di" bpmnElement="Flow_1p77eg5">

@@ -23,7 +23,7 @@
         <bpmn:targetRef>DataObjectReference_0vc3cze</bpmn:targetRef>
       </bpmn:dataOutputAssociation>
     </bpmn:startEvent>
-    <bpmn:dataObjectReference id="DataObjectReference_0reywfr" name="verification code" dataObjectRef="DataObject_1npgny8" />
+    <bpmn:dataObjectReference id="DataObjectReference_0reywfr" name="Verification code" dataObjectRef="DataObject_1npgny8" />
     <bpmn:dataObject id="DataObject_1npgny8" />
     <bpmn:receiveTask id="Activity_1mwh0h2" name="Receive entered code">
       <bpmn:incoming>Flow_1uyqin8</bpmn:incoming>
@@ -44,7 +44,7 @@
     </bpmn:exclusiveGateway>
     <bpmn:sequenceFlow id="Flow_0h359ge" sourceRef="Activity_0zcwvuh" targetRef="Activity_0s1doyz" />
     <bpmn:sequenceFlow id="Flow_1uyqin8" sourceRef="Activity_0s1doyz" targetRef="Activity_1mwh0h2" />
-    <bpmn:dataObjectReference id="DataObjectReference_1onvq7l" name="entered code" dataObjectRef="DataObject_086m225" />
+    <bpmn:dataObjectReference id="DataObjectReference_1onvq7l" name="Entered code" dataObjectRef="DataObject_086m225" />
     <bpmn:dataObject id="DataObject_086m225" />
     <bpmn:sendTask id="Activity_0bfh85u" name="inform user">
       <bpmn:incoming>Flow_1tly65k</bpmn:incoming>
@@ -62,7 +62,7 @@
         <bpmn:targetRef>DataStoreReference_0s7hqm1</bpmn:targetRef>
       </bpmn:dataOutputAssociation>
     </bpmn:task>
-    <bpmn:dataObjectReference id="DataObjectReference_0vc3cze" name="registration information" dataObjectRef="DataObject_0s19r98" />
+    <bpmn:dataObjectReference id="DataObjectReference_0vc3cze" name="Registration information" dataObjectRef="DataObject_0s19r98" />
     <bpmn:dataObject id="DataObject_0s19r98" />
     <bpmn:sendTask id="Activity_013km7d" name="Notify user">
       <bpmn:incoming>Flow_1y3mffp</bpmn:incoming>
@@ -114,7 +114,7 @@
       <bpmndi:BPMNShape id="DataObjectReference_0reywfr_di" bpmnElement="DataObjectReference_0reywfr">
         <dc:Bounds x="992" y="1415" width="36" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="970" y="1472" width="80" height="14" />
+          <dc:Bounds x="970" y="1472" width="81" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_1armuc2" bpmnElement="Activity_1mwh0h2">
@@ -129,7 +129,7 @@
       <bpmndi:BPMNShape id="DataObjectReference_1onvq7l_di" bpmnElement="DataObjectReference_1onvq7l">
         <dc:Bounds x="1152" y="1415" width="36" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="1138" y="1472" width="65" height="14" />
+          <dc:Bounds x="1138" y="1472" width="66" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_15m2tnc" bpmnElement="Activity_0bfh85u">
@@ -143,7 +143,7 @@
       <bpmndi:BPMNShape id="DataObjectReference_0vc3cze_di" bpmnElement="DataObjectReference_0vc3cze">
         <dc:Bounds x="782" y="1435" width="36" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="773" y="1492" width="55" height="27" />
+          <dc:Bounds x="771" y="1492" width="59" height="27" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_135dsqr" bpmnElement="Activity_013km7d">

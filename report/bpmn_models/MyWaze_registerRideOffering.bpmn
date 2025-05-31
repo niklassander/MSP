@@ -34,9 +34,9 @@
       <bpmn2:incoming>Flow_15z4qsy</bpmn2:incoming>
     </bpmn2:endEvent>
     <bpmn2:sequenceFlow id="Flow_15z4qsy" sourceRef="Activity_02ibpl5" targetRef="Event_02p83xc" />
-    <bpmn2:dataObjectReference id="DataObjectReference_0v2rtv8" name="ride information" dataObjectRef="DataObject_0x0rcvt" />
+    <bpmn2:dataObjectReference id="DataObjectReference_0v2rtv8" name="Ride information" dataObjectRef="DataObject_0x0rcvt" />
     <bpmn2:dataObject id="DataObject_0x0rcvt" />
-    <bpmn2:dataStoreReference id="DataStoreReference_1l7maop" name="offered rides" />
+    <bpmn2:dataStoreReference id="DataStoreReference_1l7maop" name="Offered rides" />
   </bpmn2:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_0968byd">
@@ -63,13 +63,13 @@
       <bpmndi:BPMNShape id="DataObjectReference_0v2rtv8_di" bpmnElement="DataObjectReference_0v2rtv8">
         <dc:Bounds x="-1298" y="2735" width="36" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="-1318" y="2792" width="76" height="14" />
+          <dc:Bounds x="-1320" y="2792" width="81" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="DataStoreReference_1l7maop_di" bpmnElement="DataStoreReference_1l7maop">
         <dc:Bounds x="-1155" y="2735" width="50" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="-1161" y="2792" width="62" height="14" />
+          <dc:Bounds x="-1161" y="2792" width="64" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_1908ywk_di" bpmnElement="Flow_1908ywk">
