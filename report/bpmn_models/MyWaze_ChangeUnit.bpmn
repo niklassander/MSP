@@ -41,7 +41,7 @@
         <bpmn2:targetRef>DataStoreReference_009wi8n</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
     </bpmn2:serviceTask>
-    <bpmn2:dataStoreReference id="DataStoreReference_009wi8n" name="user preferences" />
+    <bpmn2:dataStoreReference id="DataStoreReference_009wi8n" name="User preferences" />
     <bpmn2:endEvent id="Event_1xh5c6x" name="updated unit">
       <bpmn2:incoming>Flow_0fn0x68</bpmn2:incoming>
     </bpmn2:endEvent>
@@ -49,9 +49,9 @@
     <bpmn2:sequenceFlow id="Flow_1ezri79" sourceRef="Activity_05drkq8" targetRef="Event_0stl2a2" />
     <bpmn2:sequenceFlow id="Flow_0aaslxb" sourceRef="Event_0stl2a2" targetRef="Activity_12isv9y" />
     <bpmn2:sequenceFlow id="Flow_0fn0x68" sourceRef="Activity_12isv9y" targetRef="Event_1xh5c6x" />
-    <bpmn2:dataObjectReference id="DataObjectReference_0s3ml0n" name="user account" dataObjectRef="DataObject_0tpfhxw" />
+    <bpmn2:dataObjectReference id="DataObjectReference_0s3ml0n" name="User account" dataObjectRef="DataObject_0tpfhxw" />
     <bpmn2:dataObject id="DataObject_0tpfhxw" />
-    <bpmn2:dataObjectReference id="DataObjectReference_183s876" name="selected unit" dataObjectRef="DataObject_1lppfv2" />
+    <bpmn2:dataObjectReference id="DataObjectReference_183s876" name="Selected unit" dataObjectRef="DataObject_1lppfv2" />
     <bpmn2:dataObject id="DataObject_1lppfv2" />
   </bpmn2:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
@@ -80,7 +80,7 @@
       <bpmndi:BPMNShape id="DataStoreReference_009wi8n_di" bpmnElement="DataStoreReference_009wi8n">
         <dc:Bounds x="1025" y="955" width="50" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="1009" y="1012" width="83" height="14" />
+          <dc:Bounds x="1008" y="1012" width="85" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Event_1xh5c6x_di" bpmnElement="Event_1xh5c6x">
@@ -92,13 +92,13 @@
       <bpmndi:BPMNShape id="DataObjectReference_0s3ml0n_di" bpmnElement="DataObjectReference_0s3ml0n">
         <dc:Bounds x="722" y="955" width="36" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="709" y="1012" width="63" height="14" />
+          <dc:Bounds x="708" y="1012" width="65" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="DataObjectReference_183s876_di" bpmnElement="DataObjectReference_183s876">
         <dc:Bounds x="882" y="955" width="36" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="869" y="1012" width="62" height="14" />
+          <dc:Bounds x="868" y="1012" width="64" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_0z4iegr_di" bpmnElement="Flow_0z4iegr">

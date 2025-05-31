@@ -71,7 +71,7 @@
       </bpmn2:dataOutputAssociation>
       <bpmn2:messageEventDefinition id="MessageEventDefinition_10ht7ap" />
     </bpmn2:intermediateCatchEvent>
-    <bpmn2:dataObjectReference id="DataObjectReference_172kkfs" name="user credentials" dataObjectRef="DataObject_11tmkuv" />
+    <bpmn2:dataObjectReference id="DataObjectReference_172kkfs" name="User credentials" dataObjectRef="DataObject_11tmkuv" />
     <bpmn2:dataObject id="DataObject_11tmkuv" />
     <bpmn2:serviceTask id="Activity_0owq26k" name="login user">
       <bpmn2:incoming>Flow_12ulzf7</bpmn2:incoming>
@@ -110,14 +110,14 @@
       <bpmn2:outgoing>Flow_0hj70le</bpmn2:outgoing>
     </bpmn2:startEvent>
     <bpmn2:dataStoreReference id="DataStoreReference_12d3hsr" name="accounts" />
-    <bpmn2:dataObjectReference id="DataObjectReference_1lzg2h4" name="user account" dataObjectRef="DataObject_0n39n5g" />
+    <bpmn2:dataObjectReference id="DataObjectReference_1lzg2h4" name="User account" dataObjectRef="DataObject_0n39n5g" />
     <bpmn2:dataObject id="DataObject_0n39n5g" />
     <bpmn2:exclusiveGateway id="Gateway_0rzp6he">
       <bpmn2:incoming>Flow_0i7u03t</bpmn2:incoming>
       <bpmn2:incoming>Flow_005cr9a</bpmn2:incoming>
       <bpmn2:outgoing>Flow_1i5pgzs</bpmn2:outgoing>
     </bpmn2:exclusiveGateway>
-    <bpmn2:dataObjectReference id="DataObjectReference_0wlmz6u" name="registration information" dataObjectRef="DataObject_02no4zk" />
+    <bpmn2:dataObjectReference id="DataObjectReference_0wlmz6u" name="Registration information" dataObjectRef="DataObject_02no4zk" />
     <bpmn2:dataObject id="DataObject_02no4zk" />
     <bpmn2:intermediateCatchEvent id="Event_19wc2y3" name="get registration information">
       <bpmn2:incoming>Flow_0d4ek06</bpmn2:incoming>
@@ -150,9 +150,9 @@
       </bpmn2:dataOutputAssociation>
       <bpmn2:messageEventDefinition id="MessageEventDefinition_01xv1wb" />
     </bpmn2:intermediateCatchEvent>
-    <bpmn2:dataObjectReference id="DataObjectReference_0iq4j3i" name="ride information" dataObjectRef="DataObject_1a0rv6r" />
+    <bpmn2:dataObjectReference id="DataObjectReference_0iq4j3i" name="Ride information" dataObjectRef="DataObject_1a0rv6r" />
     <bpmn2:dataObject id="DataObject_1a0rv6r" />
-    <bpmn2:dataObjectReference id="DataObjectReference_03fzkka" name="details of requested ride" dataObjectRef="DataObject_0lh6g2g" />
+    <bpmn2:dataObjectReference id="DataObjectReference_03fzkka" name="Details of requested ride" dataObjectRef="DataObject_0lh6g2g" />
     <bpmn2:dataObject id="DataObject_0lh6g2g" />
     <bpmn2:intermediateCatchEvent id="Event_0hz9315" name="offer shared ride">
       <bpmn2:incoming>Flow_1xh3qum</bpmn2:incoming>
@@ -170,7 +170,7 @@
       </bpmn2:dataOutputAssociation>
       <bpmn2:messageEventDefinition id="MessageEventDefinition_112nsxp" />
     </bpmn2:intermediateCatchEvent>
-    <bpmn2:dataObjectReference id="DataObjectReference_0nut4c0" name="address" dataObjectRef="DataObject_17l776l" />
+    <bpmn2:dataObjectReference id="DataObjectReference_0nut4c0" name="Address" dataObjectRef="DataObject_17l776l" />
     <bpmn2:dataObject id="DataObject_17l776l" />
     <bpmn2:intermediateCatchEvent id="Event_0yqwhz2" name="get address for bookmark">
       <bpmn2:incoming>Flow_16z8sdb</bpmn2:incoming>
@@ -180,9 +180,9 @@
       </bpmn2:dataOutputAssociation>
       <bpmn2:messageEventDefinition id="MessageEventDefinition_1tnhe9i" />
     </bpmn2:intermediateCatchEvent>
-    <bpmn2:dataObjectReference id="DataObjectReference_1ago5ly" name="user account" dataObjectRef="DataObject_1qozhdp" />
+    <bpmn2:dataObjectReference id="DataObjectReference_1ago5ly" name="User account" dataObjectRef="DataObject_1qozhdp" />
     <bpmn2:dataObject id="DataObject_1qozhdp" />
-    <bpmn2:dataObjectReference id="DataObjectReference_0v6jt46" name="user account" dataObjectRef="DataObject_1rk3atd" />
+    <bpmn2:dataObjectReference id="DataObjectReference_0v6jt46" name="User account" dataObjectRef="DataObject_1rk3atd" />
     <bpmn2:dataObject id="DataObject_1rk3atd" />
     <bpmn2:intermediateCatchEvent id="Event_1wmaess" name="open settings">
       <bpmn2:incoming>Flow_0hrcgju</bpmn2:incoming>
@@ -327,9 +327,9 @@
         <bpmn2:incoming>Flow_1trcgnk</bpmn2:incoming>
       </bpmn2:endEvent>
       <bpmn2:sequenceFlow id="Flow_1trcgnk" sourceRef="Activity_0b4faij" targetRef="Event_0zwhyne" />
-      <bpmn2:dataObjectReference id="DataObjectReference_0hgtcxv" name="destination" dataObjectRef="DataObject_04ui7j7" />
+      <bpmn2:dataObjectReference id="DataObjectReference_0hgtcxv" name="Destination" dataObjectRef="DataObject_04ui7j7" />
       <bpmn2:dataObject id="DataObject_04ui7j7" />
-      <bpmn2:dataObjectReference id="DataObjectReference_0m173v7" name="route" dataObjectRef="DataObject_0nmbxvk" />
+      <bpmn2:dataObjectReference id="DataObjectReference_0m173v7" name="Route" dataObjectRef="DataObject_0nmbxvk" />
       <bpmn2:dataObject id="DataObject_0nmbxvk" />
     </bpmn2:subProcess>
     <bpmn2:sequenceFlow id="Flow_05asvb4" sourceRef="Event_0gxe6vh" targetRef="Gateway_0r9rb4y" />
@@ -369,7 +369,7 @@
       <bpmndi:BPMNShape id="DataObjectReference_172kkfs_di" bpmnElement="DataObjectReference_172kkfs">
         <dc:Bounds x="672" y="105" width="36" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="651" y="162" width="78" height="14" />
+          <dc:Bounds x="650" y="162" width="80" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_1b0mfut_di" bpmnElement="Activity_0owq26k">
@@ -399,7 +399,7 @@
       <bpmndi:BPMNShape id="DataObjectReference_1lzg2h4_di" bpmnElement="DataObjectReference_1lzg2h4">
         <dc:Bounds x="842" y="286" width="36" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="829" y="343" width="63" height="14" />
+          <dc:Bounds x="828" y="343" width="65" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Gateway_0rzp6he_di" bpmnElement="Gateway_0rzp6he" isMarkerVisible="true">
@@ -408,7 +408,7 @@
       <bpmndi:BPMNShape id="DataObjectReference_0wlmz6u_di" bpmnElement="DataObjectReference_0wlmz6u">
         <dc:Bounds x="672" y="436" width="36" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="663" y="493" width="55" height="27" />
+          <dc:Bounds x="661" y="493" width="59" height="27" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Event_19wc2y3_di" bpmnElement="Event_19wc2y3">
@@ -432,7 +432,7 @@
       <bpmndi:BPMNShape id="DataObjectReference_0iq4j3i_di" bpmnElement="DataObjectReference_0iq4j3i">
         <dc:Bounds x="1462" y="326" width="36" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="1442" y="383" width="76" height="14" />
+          <dc:Bounds x="1440" y="383" width="81" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="DataObjectReference_03fzkka_di" bpmnElement="DataObjectReference_03fzkka">
@@ -456,7 +456,7 @@
       <bpmndi:BPMNShape id="DataObjectReference_0nut4c0_di" bpmnElement="DataObjectReference_0nut4c0">
         <dc:Bounds x="1462" y="566" width="36" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="1460" y="623" width="40" height="14" />
+          <dc:Bounds x="1460" y="623" width="41" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Event_0yqwhz2_di" bpmnElement="Event_0yqwhz2">
@@ -468,13 +468,13 @@
       <bpmndi:BPMNShape id="DataObjectReference_1ago5ly_di" bpmnElement="DataObjectReference_1ago5ly">
         <dc:Bounds x="1462" y="686" width="36" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="1449" y="743" width="63" height="14" />
+          <dc:Bounds x="1448" y="743" width="65" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="DataObjectReference_0v6jt46_di" bpmnElement="DataObjectReference_0v6jt46">
         <dc:Bounds x="1462" y="836" width="36" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="1449" y="893" width="63" height="14" />
+          <dc:Bounds x="1448" y="893" width="65" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Event_1wmaess_di" bpmnElement="Event_1wmaess">
@@ -549,13 +549,13 @@
       <bpmndi:BPMNShape id="DataObjectReference_0hgtcxv_di" bpmnElement="DataObjectReference_0hgtcxv">
         <dc:Bounds x="1712" y="55" width="36" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="1703" y="31" width="54" height="14" />
+          <dc:Bounds x="1702" y="31" width="56" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="DataObjectReference_0m173v7_di" bpmnElement="DataObjectReference_0m173v7">
         <dc:Bounds x="1862" y="55" width="36" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="1867" y="31" width="26" height="14" />
+          <dc:Bounds x="1865" y="31" width="30" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_0zdze0c_di" bpmnElement="Flow_0zdze0c">

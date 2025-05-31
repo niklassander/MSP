@@ -166,22 +166,22 @@
     <bpmn2:endEvent id="Event_12md3da" name="successful ride match">
       <bpmn2:incoming>Flow_13cgz80</bpmn2:incoming>
     </bpmn2:endEvent>
-    <bpmn2:dataObjectReference id="DataObjectReference_0dur4ar" name="blacklist" dataObjectRef="DataObject_1nnwjsb" />
+    <bpmn2:dataObjectReference id="DataObjectReference_0dur4ar" name="Blacklist" dataObjectRef="DataObject_1nnwjsb" />
     <bpmn2:dataObject id="DataObject_1nnwjsb" />
-    <bpmn2:dataObjectReference id="DataObjectReference_01tg2gn" name="details of requested ride" dataObjectRef="DataObject_0rofjg8" />
+    <bpmn2:dataObjectReference id="DataObjectReference_01tg2gn" name="Details of requested ride" dataObjectRef="DataObject_0rofjg8" />
     <bpmn2:dataObject id="DataObject_0rofjg8" />
-    <bpmn2:dataObjectReference id="DataObjectReference_1436cp7" name="details of requested ride" dataObjectRef="DataObject_092tlwm" />
+    <bpmn2:dataObjectReference id="DataObjectReference_1436cp7" name="Details of requested ride" dataObjectRef="DataObject_092tlwm" />
     <bpmn2:dataObject id="DataObject_092tlwm" />
     <bpmn2:endEvent id="Event_0m9pfr5" name="no available ride">
       <bpmn2:incoming>Flow_0lzsszv</bpmn2:incoming>
     </bpmn2:endEvent>
-    <bpmn2:dataObjectReference id="DataObjectReference_18rii3z" name="confirmation of offering user" dataObjectRef="DataObject_019tfnt" />
+    <bpmn2:dataObjectReference id="DataObjectReference_18rii3z" name="Confirmation of offering user" dataObjectRef="DataObject_019tfnt" />
     <bpmn2:dataObject id="DataObject_019tfnt" />
-    <bpmn2:dataObjectReference id="DataObjectReference_0eis892" name="confirmation of requesting user" dataObjectRef="DataObject_1habaxu" />
+    <bpmn2:dataObjectReference id="DataObjectReference_0eis892" name="Confirmation of requesting user" dataObjectRef="DataObject_1habaxu" />
     <bpmn2:dataObject id="DataObject_1habaxu" />
-    <bpmn2:dataObjectReference id="DataObjectReference_07c4m9a" name="details of requested ride" dataObjectRef="DataObject_0vrrdse" />
+    <bpmn2:dataObjectReference id="DataObjectReference_07c4m9a" name="Details of requested ride" dataObjectRef="DataObject_0vrrdse" />
     <bpmn2:dataObject id="DataObject_0vrrdse" />
-    <bpmn2:dataObjectReference id="DataObjectReference_0oh7qu0" name="confirmation of offering user" dataObjectRef="DataObject_0fd8xc0" />
+    <bpmn2:dataObjectReference id="DataObjectReference_0oh7qu0" name="Confirmation of offering user" dataObjectRef="DataObject_0fd8xc0" />
     <bpmn2:dataObject id="DataObject_0fd8xc0" />
   </bpmn2:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
@@ -279,7 +279,7 @@
       <bpmndi:BPMNShape id="DataObjectReference_0dur4ar_di" bpmnElement="DataObjectReference_0dur4ar">
         <dc:Bounds x="412" y="495" width="36" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="410" y="543" width="40" height="14" />
+          <dc:Bounds x="410" y="543" width="41" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="DataObjectReference_01tg2gn_di" bpmnElement="DataObjectReference_01tg2gn">
@@ -303,7 +303,7 @@
       <bpmndi:BPMNShape id="DataObjectReference_18rii3z_di" bpmnElement="DataObjectReference_18rii3z">
         <dc:Bounds x="902" y="695" width="36" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="884" y="752" width="73" height="27" />
+          <dc:Bounds x="883" y="752" width="75" height="27" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="DataObjectReference_0eis892_di" bpmnElement="DataObjectReference_0eis892">
@@ -321,7 +321,7 @@
       <bpmndi:BPMNShape id="BPMNShape_0picqhe" bpmnElement="DataObjectReference_0oh7qu0">
         <dc:Bounds x="1452" y="815" width="36" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="1434" y="872" width="73" height="27" />
+          <dc:Bounds x="1433" y="872" width="75" height="27" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_0nd84zt_di" bpmnElement="Flow_0nd84zt">
