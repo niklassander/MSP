@@ -295,9 +295,9 @@ Register vehicle type & MyWaze.bpmn, MyWaze\_registerVehicleType.bpmn \\
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=\textwidth]{UseCases/Use_Case_Shared_Ride.png}
-  \caption{Use Case Diagram: Shared Ride}
-  \label{fig:useCaseSharedRide}
+  \includegraphics[width=\textwidth]{UseCases/Use_Case_Statistics.png}
+  \caption{Use Case Diagram: Statistics}
+  \label{fig:UseCaseStatistics}
 \end{figure}
 
 \begin{figure}[H]
@@ -390,6 +390,13 @@ Register vehicle type & MyWaze.bpmn, MyWaze\_registerVehicleType.bpmn \\
   \label{fig:sequence_stats}
 \end{figure}
 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{images/sequence_diagramm/changeUnit_sequenceDiagram.pdf}
+  \caption{Sequence Diagram: Change Units}
+  \label{fig:sequence_units}
+\end{figure}
+
 \section*{Development View}
 \begin{figure}[H]
   \centering
@@ -447,6 +454,23 @@ Register vehicle type & MyWaze.bpmn, MyWaze\_registerVehicleType.bpmn \\
   \label{fig:subsystems_alerting}
 \end{figure}
 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{Internal_Block_Diagrams/IBD_Stats.png}
+  \caption{Internal Block Diagram: Statistics Subsystem}
+  \label{fig:subsystems_stats}
+\end{figure}
+
+
+\section*{Deployment View}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{images/deploymentView_new.png}
+  \caption{Deployment View}
+  \label{fig:deployment}
+\end{figure}
+
 
 \clearpage
 
@@ -476,6 +500,28 @@ Register vehicle type & MyWaze.bpmn, MyWaze\_registerVehicleType.bpmn \\
   \label{fig:featuremodel}
 \end{figure}
 
+
+\clearpage
+
+\section*{Implementation Considerations for Non-Functional Requirements}
+
+\subsection*{Portability}
+The application is cross-browser compatible, functioning reliably on Chrome, Firefox, Safari, and other modern browsers. This is achieved through the use of React.js, which compiles to standard HTML, CSS, and JavaScript without requiring browser-specific dependencies.
+
+\subsection*{Safety}
+To minimize driver distraction, the system supports hands-free interaction by allowing destination selection from bookmarks and recent destinations. Hazard reporting is facilitated via intuitive UI icons, enabling quick, non-intrusive input.
+
+\subsection*{Reliability}
+The application demonstrates a fast recovery time (approximately 1 second) in the event of a crash or restart, aided by lightweight frameworks. It relies on stable, well-supported APIs, such as OpenStreetMap (OSM), for map data and route computation. A \textbf{layered architecture pattern} promotes maintainability and testability, simplifying issue detection and resolution.
+
+\subsection*{Usability}
+The user interface is designed for accessibility and minimal interaction overhead. Key functions are located on the main map view, making them easily discoverable. Unit changes require only two clicks, and most actions are accessible with minimal user input, catering to a wide range of user demographics, especially regarding technological literacy.
+
+\subsection*{Security}
+User accounts are secured through email verification and password protection, ensuring basic authentication and data protection measures are in place.
+
+\subsection*{Performance}
+Route and ETA calculations are performed using efficient, third-party routing APIs, avoiding the overhead of custom algorithm implementations. The React.js-based single-page application leverages reusable components for maintainability and speed. Server-side computation ensures consistent performance regardless of client hardware (\textbf{client-server pattern}). The \textbf{Observer pattern} is employed for real-time hazard updates, eliminating the need for client-side polling.
 
 \clearpage
 
